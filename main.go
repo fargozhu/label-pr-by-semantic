@@ -16,7 +16,8 @@ func main() {
 		repo     = os.Getenv("GITHUB_REPOSITORY")
 	)
 
-	fmt.Sprintln("[input] status %v", status)
-	fmt.Sprintln("[context] workflow %v", workflow)
-	fmt.Sprintln("[context] repo %v", repo)
+	fmt.Println("Start printing stuff...")
+	fmt.Println("[input] status %v", status)
+	fmt.Println("[context] workflow %v", workflow)
+	fmt.Println("[context] repo %v", repo)
 }
