@@ -4,9 +4,7 @@ author: 'GitHub'
 inputs: 
   status:
     description: 'Input to use'
-    default: 'world'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.status }}
