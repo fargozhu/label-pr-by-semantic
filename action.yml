@@ -1,16 +1,12 @@
-# action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+name: 'Container Action Template'
+description: 'Get started with Container actions'
+author: 'GitHub'
+inputs: 
+  status:
+    description: 'Input to use'
+    default: 'world'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.status }}
